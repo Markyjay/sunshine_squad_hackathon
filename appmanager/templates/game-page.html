@@ -1,21 +1,10 @@
 {% extends "base.html" %}
+<div class="main">
 {% block content %}
-<main>
-    <a href="{{url_for('tic_tac_toe')}}">
-        <button>
-            Tic Tac Toe
-        </button>
-    </a>
-    <a href="{{url_for('memory_game')}}">
-        <button>
-            Memory Game
-        </button>
-    </a>
-    <a href="{{url_for('emoji_catcher')}}">
-        <button>
-            Emoji Cathcer
-        </button>
-    </a>
-</main>
-
+<div class="container mt-4">
+    <a href="{{url_for('tic_tac_toe')}}" class="btn btn-warning">Tic Tac Toe</a>
+    <a href="{{url_for('memory_game')}}" class="btn btn-warning">Memory Game</a>
+    <a href="{{url_for('emoji_catcher')}}" class="btn btn-warning">Emoji Cathcer</a>
+</div>
 {% endblock %}
+</div>
